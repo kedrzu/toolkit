@@ -1,21 +1,24 @@
-import type { Translatable } from '@nzyme/i18n';
+import type { Validator } from '../Validator.js';
 
-import translations from './translations.js';
-import { CommonErrors } from '../types.js';
-import { createError } from '../utils.js';
-import type { Validator } from '../validator.js';
+export type RegexValidatorOptions = {
+    regex: RegExp;
+    message: (params: { value: string }) => string;
+};
 
-export function regexValidator(regex: RegExp, message?: Translatable): Validator<string> {
-    return (value: string) => {
-        if (!regex.test(value)) {
-            return regexError(message);
+export function regexValidator(
+    options: RegexValidatorOptions,
+): Validator<string | null | undefined> {
+    const { regex, message } = options;
+
+    return (value, ctx) => {
+        if (value == null) {
+            return;
         }
-    };
-}
 
-export function regexError(message?: Translatable) {
-    return createError({
-        code: CommonErrors.InvalidValue,
-        message: message ?? translations.get('InvalidFormat'),
-    });
+        if (regex.test(value)) {
+            return;
+        }
+
+        return message({ ...ctx, value });
+    };
 }

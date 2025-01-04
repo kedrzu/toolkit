@@ -1,31 +1,31 @@
-import translations from './translations.js';
-import { CommonErrors } from '../types.js';
-import { createError } from '../utils.js';
-import type { Validator } from '../validator.js';
+import type { ValidationContext, Validator } from '../Validator.js';
+import type { Comparable } from '../types.js';
 
-export interface MinValidatorOptions {
-    minValue: number;
+export interface MinValidatorOptions<T extends Comparable> {
+    minValue: T;
     exclusive?: boolean;
+    message?: (params: ValidationContext & { minValue: T; value: T }) => string;
 }
 
-export function minValidator(options: MinValidatorOptions): Validator<number> {
-    const minValue = options.minValue;
-    const exclusive = options.exclusive;
+export function minValidator<T extends Comparable>(
+    options: MinValidatorOptions<T>,
+): Validator<T | null | undefined> {
+    const { minValue, exclusive, message } = options;
 
-    return value => {
+    return (value, ctx) => {
+        if (value == null) {
+            return;
+        }
+
         const valid = exclusive ? value > minValue : value >= minValue;
         if (valid) {
             return;
         }
 
-        const params = {
-            value: minValue,
-        };
+        if (message) {
+            return message({ ...ctx, minValue, value });
+        }
 
-        return createError({
-            code: CommonErrors.MinValue,
-            message: translations.get('MinValue'),
-            params: params,
-        });
+        return `Minimum value is ${String(minValue)}`;
     };
 }

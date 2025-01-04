@@ -1,5 +1,5 @@
 {
-    "extends": "../../tsconfig.base.json",
+    "extends": "@nzyme/tsconfig/base.json",
     "compilerOptions": {
         "outDir": "./dist",
         "tsBuildInfoFile": "./dist/.tsbuildinfo",
@@ -13,6 +13,9 @@
         },
         {
             "path": "../utils/tsconfig.json"
+        },
+        {
+            "path": "../vitest/tsconfig.json"
         }
     ]
 }

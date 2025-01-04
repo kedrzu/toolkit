@@ -1,16 +1,16 @@
 {
-    "name": "nzyme",
-    "version": "1.0.0",
-    "repository": "https://github.com/nzymejs/nzyme.git",
+    "repository": "https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
-    "license": "MIT",
     "private": true,
+    "license": "MIT",
     "workspaces": [
         "packages/*"
     ],
     "scripts": {
+        "monorepo": "node packages/project-tools/dist/monorepo.js",
         "build": "tsc --build",
-        "watch": "tsc --build --watch"
+        "watch": "tsc --build --watch",
+        "dev": "yarn && yarn monorepo && yarn watch"
     },
     "devDependencies": {
         "eslint": "^8.46.0",

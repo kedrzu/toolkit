@@ -1,27 +1,25 @@
 {
     "name": "@nzyme/money",
-    "version": "1.0.0",
+    "private": true,
+    "version": "0.1.0",
     "type": "module",
     "main": "./dist/index.js",
     "module": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "sideEffects": false,
-    "repository": "https://github.com/nzymejs/nzyme.git",
+    "repository": "https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
     "scripts": {
         "eslint": "eslint . --fix --cache",
         "build": "tsc --build"
     },
     "dependencies": {
-        "@nzyme/utils": "*"
+        "@nzyme/utils": "0.1.0"
     },
     "devDependencies": {
-        "@nzyme/vitest": "*",
+        "@nzyme/eslint": "0.1.0",
+        "@nzyme/tsconfig": "0.1.0",
+        "@nzyme/vitest": "0.1.0",
         "@types/node": "^22.7.7"
-    },
-    "depcheck": {
-        "ignoreFiles": [
-            "tests"
-        ]
     }
 }

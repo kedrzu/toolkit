@@ -1,11 +1,11 @@
 {
     "name": "@nzyme/zchema",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "type": "module",
     "main": "./dist/index.js",
     "module": "./dist/index.js",
     "types": "./dist/index.d.ts",
-    "repository": "https://github.com/nzymejs/nzyme.git",
+    "repository": "https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
     "sideEffects": false,
     "scripts": {
@@ -13,11 +13,13 @@
         "build": "tsc --build"
     },
     "dependencies": {
-        "@nzyme/types": "*",
-        "@nzyme/utils": "*",
-        "@nzyme/validate": "*"
+        "@nzyme/types": "0.1.0",
+        "@nzyme/utils": "0.1.0",
+        "@nzyme/validation": "0.1.0"
     },
     "devDependencies": {
+        "@nzyme/eslint": "0.1.0",
+        "@nzyme/tsconfig": "0.1.0",
         "@types/lodash.merge": "^4.6.9",
         "vitest": "^2.1.3"
     }

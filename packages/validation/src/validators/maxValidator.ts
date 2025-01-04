@@ -1,29 +1,31 @@
-import translations from './translations.js';
-import { CommonErrors } from '../types.js';
-import { createError } from '../utils.js';
-import type { Validator } from '../validator.js';
+import type { ValidationContext, Validator } from '../Validator.js';
+import type { Comparable } from '../types.js';
 
-export interface MaxValidatorOptions {
-    maxValue: number;
+export interface MaxValidatorOptions<T extends Comparable> {
+    maxValue: T;
     exclusive?: boolean;
+    message?: (params: ValidationContext & { maxValue: T; value: T }) => string;
 }
 
-export function maxValidator(options: MaxValidatorOptions): Validator<number> {
-    const maxValue = options.maxValue;
-    const exclusive = options.exclusive;
+export function maxValidator<T extends Comparable>(
+    options: MaxValidatorOptions<T>,
+): Validator<T | null | undefined> {
+    const { maxValue, exclusive, message } = options;
 
-    return value => {
+    return (value, ctx) => {
+        if (value == null) {
+            return;
+        }
+
         const valid = exclusive ? value < maxValue : value <= maxValue;
         if (valid) {
             return;
         }
 
-        const params = { maxValue };
+        if (message) {
+            return message({ ...ctx, maxValue, value });
+        }
 
-        return createError({
-            code: CommonErrors.MaxValue,
-            message: translations.get('MaxValue'),
-            params,
-        });
+        return `Maximum value is ${String(maxValue)}`;
     };
 }

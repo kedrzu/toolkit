@@ -1,6 +1,6 @@
 {
     "name": "@nzyme/vue",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "type": "module",
     "main": "./src/index.ts",
     "module": "./src/index.ts",
@@ -15,30 +15,25 @@
         }
     },
     "sideEffects": false,
-    "repository": "https://github.com/nzymejs/nzyme.git",
+    "repository": "https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
     "scripts": {
         "eslint": "eslint . --fix --cache"
     },
     "dependencies": {
-        "@nzyme/dom-utils": "*",
-        "@nzyme/ioc": "*",
-        "@nzyme/types": "*",
-        "@nzyme/utils": "*",
-        "@nzyme/vue-ioc": "*",
-        "@nzyme/vue-utils": "*",
+        "@nzyme/dom-utils": "0.1.0",
+        "@nzyme/ioc": "0.1.0",
+        "@nzyme/types": "0.1.0",
+        "@nzyme/utils": "0.1.0",
+        "@nzyme/vue-ioc": "0.1.0",
+        "@nzyme/vue-utils": "0.1.0",
         "lodash.debounce": "^4.0.8",
         "vue": "^3.5.12"
     },
     "devDependencies": {
         "@types/lodash.debounce": "^4.0.9",
         "sass": "1.75.0",
-        "typescript-plugin-css-modules": "5.1.0"
-    },
-    "depcheck": {
-        "ignoreDeps": [
-            "sass",
-            "typescript-plugin-css-modules"
-        ]
+        "@nzyme/eslint": "0.1.0",
+        "@nzyme/tsconfig": "0.1.0"
     }
 }

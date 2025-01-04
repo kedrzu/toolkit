@@ -1,10 +1,10 @@
 {
     "name": "@nzyme/types",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "main": "dist/index.ts",
     "types": "dist/index.d.ts",
-    "repository": "https://github.com/nzymejs/nzyme.git",
+    "repository": "https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
     "sideEffects": false,
     "scripts": {

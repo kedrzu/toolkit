@@ -5,7 +5,7 @@ import {
     type ValidationContext,
     type ValidationErrors,
     type ValidationResult,
-} from '@nzyme/validate';
+} from '@nzyme/validation';
 
 import type { SchemaAny, Infer } from '../Schema.js';
 

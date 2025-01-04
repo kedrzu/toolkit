@@ -1,12 +1,13 @@
 {
     "name": "@nzyme/aws-cdk",
-    "version": "1.0.0",
+    "private": true,
+    "version": "0.1.0",
     "type": "module",
     "main": "./dist/index.js",
     "module": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "sideEffects": false,
-    "repository": "https://github.com/nzymejs/nzyme.git",
+    "repository": "https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
     "scripts": {
         "eslint": "eslint . --fix --cache",
@@ -15,8 +16,8 @@
     "dependencies": {
         "@aws-cdk/cloudformation-diff": "^2.137.0",
         "@aws-cdk/cx-api": "^2.137.0",
-        "@nzyme/logging": "*",
-        "@nzyme/utils": "*",
+        "@nzyme/logging": "0.1.0",
+        "@nzyme/utils": "0.1.0",
         "aws-cdk": "^2.137.0",
         "aws-cdk-lib": "^2.137.0",
         "aws-sdk": "^2.1565.0",
@@ -28,7 +29,8 @@
         "proxy-agent": "^6.3.1"
     },
     "devDependencies": {
-        "@nzyme/eslint": "*",
+        "@nzyme/eslint": "0.1.0",
+        "@nzyme/tsconfig": "0.1.0",
         "@types/node": "^22.7.7"
     },
     "depcheck": {

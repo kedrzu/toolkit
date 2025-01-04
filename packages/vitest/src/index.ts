@@ -2,6 +2,8 @@ export * from './matchers/nullable.js';
 export * from './matchers/nullish.js';
 export * from './matchers/optional.js';
 
+export * from './utils/advanceTime.js';
+
 interface CustomMatchers<T = unknown> {
     toEqualFully: (expected: T) => void;
     toEqualPartially: <E>(expected: E) => void;

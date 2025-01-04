@@ -1,16 +1,35 @@
-import translations from './translations.js';
-import { CommonErrors } from '../types.js';
-import { createError } from '../utils.js';
+import type { ValidationContext, Validator } from '../Validator.js';
 
-export function requiredValidator<T>(value: T) {
-    if (value == null) {
-        return requiredError();
-    }
+export type RequiredValidatorParams<T> = {
+    message?: (params: ValidationContext & { value: T | null | undefined }) => string;
+};
+
+export function requiredValidator<T>(
+    params?: RequiredValidatorParams<T>,
+): Validator<T | null | undefined> {
+    const message = params && params.message;
+
+    return (value, ctx) => {
+        if (isValueNonEmpty(value)) {
+            return;
+        }
+
+        if (message) {
+            return message({ ...ctx, value });
+        }
+
+        return 'Field is required';
+    };
 }
 
-export function requiredError() {
-    return createError({
-        code: CommonErrors.Required,
-        message: translations.get('Required'),
-    });
+function isValueNonEmpty(value: unknown): boolean {
+    if (value == null || value === false) {
+        return false;
+    }
+
+    if (typeof value === 'string' && value.trim() === '') {
+        return false;
+    }
+
+    return true;
 }

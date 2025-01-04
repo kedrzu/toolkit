@@ -1,5 +1,5 @@
 import type { IfAny, IfUnknown, Simplify } from '@nzyme/types';
-import type { Validator } from '@nzyme/validate';
+import type { Validator } from '@nzyme/validation';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type, @typescript-eslint/no-unused-vars
 export interface SchemaProps<V> {}

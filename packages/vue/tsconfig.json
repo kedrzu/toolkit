@@ -1,20 +1,10 @@
 {
-    "extends": "../../tsconfig.base.json",
+    "extends": "@nzyme/tsconfig/vue.json",
     "compilerOptions": {
         "outDir": "./dist",
         "tsBuildInfoFile": "./dist/.tsbuildinfo",
         "rootDir": "./src",
-        "lib": ["DOM", "DOM.Iterable", "ESNext"],
-        "jsx": "react",
-        "jsxFactory": "h",
-        "jsxFragmentFactory": "h",
-        "composite": false,
-        "plugins": [
-            {
-                "name": "typescript-plugin-css-modules"
-            }
-        ],
-        "types": ["node", "vite/client"]
+        "composite": false
     },
     "include": ["./src/**/*.ts", "./src/**/*.tsx", "./src/**/*.json", "./src/**/*.scss"],
     "references": [
