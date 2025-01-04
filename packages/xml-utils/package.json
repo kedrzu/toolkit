@@ -1,6 +1,6 @@
 {
     "name": "@nzyme/xml-utils",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "type": "module",
     "main": "./dist/index.js",
     "module": "./dist/index.js",
@@ -16,7 +16,7 @@
         "fast-xml-parser": "^4.5.1"
     },
     "devDependencies": {
-        "@nzyme/eslint": "^0.1.0",
-        "@nzyme/tsconfig": "^0.1.0"
+        "@nzyme/eslint": "^0.1.1",
+        "@nzyme/tsconfig": "^0.1.1"
     }
 }

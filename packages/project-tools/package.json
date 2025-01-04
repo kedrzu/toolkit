@@ -1,6 +1,6 @@
 {
     "name": "@nzyme/project-tools",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "repository": "git+https://github.com/kedrzu/nzyme.git",
     "author": "",
     "type": "module",
@@ -27,8 +27,8 @@
         "ts-node": "^10.9.2"
     },
     "devDependencies": {
-        "@nzyme/eslint": "^0.1.0",
-        "@nzyme/tsconfig": "^0.1.0",
+        "@nzyme/eslint": "^0.1.1",
+        "@nzyme/tsconfig": "^0.1.1",
         "@types/lerna__package": "^5.1.3",
         "@types/lerna__project": "^5.1.2",
         "@types/lodash.merge": "^4.6.9",
