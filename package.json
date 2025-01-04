@@ -1,7 +1,6 @@
 {
     "repository": "https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
-    "private": true,
     "license": "MIT",
     "workspaces": [
         "packages/*"
@@ -10,6 +9,7 @@
         "monorepo": "node packages/project-tools/dist/monorepo.js",
         "build": "tsc --build",
         "watch": "tsc --build --watch",
+        "publish": "lerna publish --no-private",
         "dev": "yarn && yarn monorepo && yarn watch"
     },
     "devDependencies": {
