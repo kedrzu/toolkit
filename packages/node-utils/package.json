@@ -13,13 +13,13 @@
         "build": "tsc --build"
     },
     "dependencies": {
-        "@nzyme/types": "0.1.0",
-        "@nzyme/utils": "0.1.0"
+        "@nzyme/types": "^0.1.0",
+        "@nzyme/utils": "^0.1.0"
     },
     "devDependencies": {
-        "@nzyme/eslint": "0.1.0",
-        "@nzyme/tsconfig": "0.1.0",
-        "@nzyme/vitest": "0.1.0",
+        "@nzyme/eslint": "^0.1.0",
+        "@nzyme/tsconfig": "^0.1.0",
+        "@nzyme/vitest": "^0.1.0",
         "@types/node": "^22.10.5"
     }
 }
