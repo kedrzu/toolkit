@@ -1,7 +1,7 @@
 {
     "name": "@nzyme/project-tools",
     "version": "0.1.0",
-    "repository": "https://github.com/kedrzu/nzyme.git",
+    "repository": "git+https://github.com/kedrzu/nzyme.git",
     "author": "",
     "type": "module",
     "main": "./dist/index.js",

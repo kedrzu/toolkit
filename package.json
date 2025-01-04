@@ -1,5 +1,5 @@
 {
-    "repository": "https://github.com/kedrzu/nzyme.git",
+    "repository": "git+https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
     "license": "MIT",
     "workspaces": [
@@ -9,12 +9,14 @@
         "monorepo": "node packages/project-tools/dist/monorepo.js",
         "build": "tsc --build",
         "watch": "tsc --build --watch",
-        "publish": "lerna publish --no-private",
+        "pkg:changeset": "changeset",
+        "pkg:version": "changeset version",
+        "pkg:publish": "changeset publish",
         "dev": "yarn && yarn monorepo && yarn watch",
         "upgrade": "yarn upgrade-interactive"
     },
-    "devDependencies": {
-        "lerna": "^8.1.9",
+    "dependencies": {
+        "@changesets/cli": "^2.27.11",
         "prettier": "^3.4.2",
         "ts-node": "^10.9.2",
         "typescript": "^5.7.2"

@@ -1,7 +1,7 @@
 {
     "name": "@nzyme/tsconfig",
     "version": "0.1.0",
-    "repository": "https://github.com/kedrzu/nzyme.git",
+    "repository": "git+https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
     "sideEffects": false,
     "main": "./base.json",

@@ -4,7 +4,7 @@
     "type": "module",
     "main": "./src/index.ts",
     "module": "./src/index.ts",
-    "repository": "https://github.com/kedrzu/nzyme.git",
+    "repository": "git+https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
     "sideEffects": false,
     "scripts": {

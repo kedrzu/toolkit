@@ -13,7 +13,7 @@
         }
     },
     "sideEffects": false,
-    "repository": "https://github.com/kedrzu/nzyme.git",
+    "repository": "git+https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
     "scripts": {
         "eslint": "eslint . --fix --cache",
