@@ -1,3 +1,15 @@
+# v0.2.1 (Mon Jan 06 2025)
+
+#### 🐛 Bug Fix
+
+- fix(eslint): fix publish config (kedrzu@gmail.com)
+
+#### Authors: 1
+
+- Michał Kędrzyński (kedrzu@gmail.com)
+
+---
+
 # v0.2.0 (Mon Jan 06 2025)
 
 #### 🚀 Enhancement

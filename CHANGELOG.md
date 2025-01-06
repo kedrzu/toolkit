@@ -1,5 +1,18 @@
 # (Mon Jan 06 2025)
 
+#### 🐛 Bug Fix
+
+- `@nzyme/eslint@0.2.1`
+  - fix(eslint): fix publish config (kedrzu@gmail.com)
+
+#### Authors: 1
+
+- Michał Kędrzyński (kedrzu@gmail.com)
+
+---
+
+# (Mon Jan 06 2025)
+
 #### 🚀 Enhancement
 
 - feat(devtools): tools for compiling and running dev servers ([@kedrzu](https://github.com/kedrzu))
