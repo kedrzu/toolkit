@@ -1,7 +1,7 @@
 {
     "name": "@nzyme/money",
     "private": true,
-    "version": "0.2.1",
+    "version": "0.2.2",
     "type": "module",
     "main": "./dist/index.js",
     "module": "./dist/index.js",
@@ -21,12 +21,12 @@
         "build": "tsc --build"
     },
     "dependencies": {
-        "@nzyme/utils": "^0.2.1"
+        "@nzyme/utils": "^0.2.2"
     },
     "devDependencies": {
-        "@nzyme/eslint": "^0.2.1",
+        "@nzyme/eslint": "^0.2.2",
         "@nzyme/tsconfig": "^0.2.0",
-        "@nzyme/vitest": "^0.2.1",
+        "@nzyme/vitest": "^0.2.2",
         "@types/node": "^22.10.5"
     }
 }
