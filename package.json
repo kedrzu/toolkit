@@ -9,11 +9,15 @@
         "monorepo": "node packages/project-tools/dist/monorepo.js",
         "build": "tsc --build",
         "watch": "tsc --build --watch",
-        "publish": "lerna publish --no-private",
+        "publish": "auto shipit",
         "dev": "yarn && yarn monorepo && yarn watch",
         "upgrade": "yarn upgrade-interactive"
     },
     "devDependencies": {
+        "@auto-it/conventional-commits": "^11.3.0",
+        "@auto-it/npm": "^11.3.0",
+        "@auto-it/released": "^11.3.0",
+        "auto": "^11.3.0",
         "lerna": "^8.1.9",
         "prettier": "^3.4.2",
         "ts-node": "^10.9.2",
@@ -22,6 +26,13 @@
     "depcheck": {
         "ignoreDeps": [
             "*"
+        ]
+    },
+    "auto": {
+        "plugins": [
+            "npm",
+            "conventional-commits",
+            "released"
         ]
     }
 }
