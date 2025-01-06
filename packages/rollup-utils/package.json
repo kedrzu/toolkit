@@ -1,6 +1,6 @@
 {
     "name": "@nzyme/rollup-utils",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "type": "module",
     "main": "./dist/index.js",
     "module": "./dist/index.js",
@@ -20,9 +20,9 @@
         "build": "tsc --build"
     },
     "dependencies": {
-        "@nzyme/esm": "^0.2.0",
-        "@nzyme/logging": "^0.2.0",
-        "@nzyme/utils": "^0.2.0",
+        "@nzyme/esm": "^0.2.1",
+        "@nzyme/logging": "^0.2.1",
+        "@nzyme/utils": "^0.2.1",
         "@rollup/plugin-commonjs": "^26.0.1",
         "@rollup/plugin-json": "^6.1.0",
         "@rollup/plugin-node-resolve": "^15.3.0",
@@ -39,7 +39,7 @@
         "type-fest": "^4.31.0"
     },
     "devDependencies": {
-        "@nzyme/eslint": "^0.2.0",
+        "@nzyme/eslint": "^0.2.1",
         "@nzyme/tsconfig": "^0.2.0",
         "@types/connect": "^3.4.38",
         "@types/express": "^5.0.0",

@@ -1272,10 +1272,10 @@ __metadata:
   dependencies:
     "@aws-cdk/cloudformation-diff": "npm:^2.137.0"
     "@aws-cdk/cx-api": "npm:^2.137.0"
-    "@nzyme/eslint": "npm:^0.2.0"
-    "@nzyme/logging": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
+    "@nzyme/logging": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
-    "@nzyme/utils": "npm:^0.2.0"
+    "@nzyme/utils": "npm:^0.2.1"
     "@types/node": "npm:^22.10.5"
     aws-cdk: "npm:^2.137.0"
     aws-cdk-lib: "npm:^2.137.0"
@@ -1321,7 +1321,7 @@ __metadata:
   dependencies:
     "@lerna/package": "npm:^6.4.1"
     "@lerna/project": "npm:^6.4.1"
-    "@nzyme/eslint": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     "@types/fs-extra": "npm:^11.0.4"
     "@types/lerna__package": "npm:^5.1.3"
@@ -1365,31 +1365,31 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/crypto-utils@workspace:packages/crypto-utils"
   dependencies:
-    "@nzyme/eslint": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     "@nzyme/types": "npm:^0.2.0"
-    "@nzyme/utils": "npm:^0.2.0"
-    "@nzyme/vitest": "npm:^0.2.0"
+    "@nzyme/utils": "npm:^0.2.1"
+    "@nzyme/vitest": "npm:^0.2.1"
     "@types/node": "npm:^22.10.5"
     "@types/spark-md5": "npm:^3.0.5"
     spark-md5: "npm:^3.0.2"
   languageName: unknown
   linkType: soft
 
-"@nzyme/dom-utils@npm:^0.2.0, @nzyme/dom-utils@workspace:packages/dom-utils":
+"@nzyme/dom-utils@npm:^0.2.1, @nzyme/dom-utils@workspace:packages/dom-utils":
   version: 0.0.0-use.local
   resolution: "@nzyme/dom-utils@workspace:packages/dom-utils"
   dependencies:
     "@nzyme/crypto-utils": "npm:0.1.0"
-    "@nzyme/eslint": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
-    "@nzyme/utils": "npm:^0.2.0"
+    "@nzyme/utils": "npm:^0.2.1"
     "@types/lodash.debounce": "npm:^4.0.9"
     lodash.debounce: "npm:^4.0.8"
   languageName: unknown
   linkType: soft
 
-"@nzyme/eslint@npm:^0.2.0, @nzyme/eslint@workspace:packages/eslint":
+"@nzyme/eslint@npm:^0.2.1, @nzyme/eslint@workspace:packages/eslint":
   version: 0.0.0-use.local
   resolution: "@nzyme/eslint@workspace:packages/eslint"
   dependencies:
@@ -1405,11 +1405,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nzyme/esm@npm:^0.2.0, @nzyme/esm@workspace:packages/esm":
+"@nzyme/esm@npm:^0.2.1, @nzyme/esm@workspace:packages/esm":
   version: 0.0.0-use.local
   resolution: "@nzyme/esm@workspace:packages/esm"
   dependencies:
-    "@nzyme/eslint": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     "@types/node": "npm:^22.10.5"
   languageName: unknown
@@ -1419,11 +1419,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/fetch-utils@workspace:packages/fetch-utils"
   dependencies:
-    "@nzyme/eslint": "npm:^0.2.0"
-    "@nzyme/ioc": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
+    "@nzyme/ioc": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     "@nzyme/types": "npm:^0.2.0"
-    "@nzyme/xml-utils": "npm:^0.2.0"
+    "@nzyme/xml-utils": "npm:^0.2.1"
     "@types/node": "npm:^22.10.5"
     ufo: "npm:^1.5.4"
   languageName: unknown
@@ -1433,33 +1433,33 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/i18n@workspace:packages/i18n"
   dependencies:
-    "@nzyme/eslint": "npm:^0.2.0"
-    "@nzyme/ioc": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
+    "@nzyme/ioc": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     "@nzyme/types": "npm:^0.2.0"
-    "@nzyme/utils": "npm:^0.2.0"
+    "@nzyme/utils": "npm:^0.2.1"
   languageName: unknown
   linkType: soft
 
-"@nzyme/ioc@npm:^0.2.0, @nzyme/ioc@workspace:packages/ioc":
+"@nzyme/ioc@npm:^0.2.1, @nzyme/ioc@workspace:packages/ioc":
   version: 0.0.0-use.local
   resolution: "@nzyme/ioc@workspace:packages/ioc"
   dependencies:
-    "@nzyme/eslint": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     "@nzyme/types": "npm:^0.2.0"
-    "@nzyme/utils": "npm:^0.2.0"
-    "@nzyme/vitest": "npm:^0.2.0"
+    "@nzyme/utils": "npm:^0.2.1"
+    "@nzyme/vitest": "npm:^0.2.1"
     vitest: "npm:^2.1.8"
   languageName: unknown
   linkType: soft
 
-"@nzyme/logging@npm:^0.2.0, @nzyme/logging@workspace:packages/logging":
+"@nzyme/logging@npm:^0.2.1, @nzyme/logging@workspace:packages/logging":
   version: 0.0.0-use.local
   resolution: "@nzyme/logging@workspace:packages/logging"
   dependencies:
-    "@nzyme/eslint": "npm:^0.2.0"
-    "@nzyme/ioc": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
+    "@nzyme/ioc": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     "@types/node": "npm:^22.10.5"
     chalk: "npm:^5.4.1"
@@ -1471,10 +1471,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/money@workspace:packages/money"
   dependencies:
-    "@nzyme/eslint": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
-    "@nzyme/utils": "npm:^0.2.0"
-    "@nzyme/vitest": "npm:^0.2.0"
+    "@nzyme/utils": "npm:^0.2.1"
+    "@nzyme/vitest": "npm:^0.2.1"
     "@types/node": "npm:^22.10.5"
   languageName: unknown
   linkType: soft
@@ -1483,11 +1483,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/node-utils@workspace:packages/node-utils"
   dependencies:
-    "@nzyme/eslint": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     "@nzyme/types": "npm:^0.2.0"
-    "@nzyme/utils": "npm:^0.2.0"
-    "@nzyme/vitest": "npm:^0.2.0"
+    "@nzyme/utils": "npm:^0.2.1"
+    "@nzyme/vitest": "npm:^0.2.1"
     "@types/node": "npm:^22.10.5"
   languageName: unknown
   linkType: soft
@@ -1497,10 +1497,10 @@ __metadata:
   resolution: "@nzyme/project-utils@workspace:packages/project-utils"
   dependencies:
     "@lerna/project": "npm:^6.4.1"
-    "@nzyme/eslint": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     "@nzyme/types": "npm:^0.2.0"
-    "@nzyme/utils": "npm:^0.2.0"
+    "@nzyme/utils": "npm:^0.2.1"
     "@types/node": "npm:^22.10.5"
     chalk: "npm:^5.4.1"
     consola: "npm:^3.3.3"
@@ -1513,11 +1513,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/rollup-utils@workspace:packages/rollup-utils"
   dependencies:
-    "@nzyme/eslint": "npm:^0.2.0"
-    "@nzyme/esm": "npm:^0.2.0"
-    "@nzyme/logging": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
+    "@nzyme/esm": "npm:^0.2.1"
+    "@nzyme/logging": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
-    "@nzyme/utils": "npm:^0.2.0"
+    "@nzyme/utils": "npm:^0.2.1"
     "@rollup/plugin-commonjs": "npm:^26.0.1"
     "@rollup/plugin-json": "npm:^6.1.0"
     "@rollup/plugin-node-resolve": "npm:^15.3.0"
@@ -1544,9 +1544,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/slack@workspace:packages/slack"
   dependencies:
-    "@nzyme/eslint": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
-    "@nzyme/utils": "npm:^0.2.0"
+    "@nzyme/utils": "npm:^0.2.1"
     "@slack/web-api": "npm:7.8.0"
   languageName: unknown
   linkType: soft
@@ -1585,10 +1585,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/typography@workspace:packages/typography"
   dependencies:
-    "@nzyme/eslint": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     "@nzyme/types": "npm:^0.2.0"
-    "@nzyme/utils": "npm:^0.2.0"
+    "@nzyme/utils": "npm:^0.2.1"
   languageName: unknown
   linkType: soft
 
@@ -1603,11 +1603,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nzyme/utils@npm:^0.2.0, @nzyme/utils@workspace:packages/utils":
+"@nzyme/utils@npm:^0.2.1, @nzyme/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@nzyme/utils@workspace:packages/utils"
   dependencies:
-    "@nzyme/eslint": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     "@nzyme/types": "npm:^0.2.0"
     "@types/lodash.isequal": "npm:^4.5.8"
@@ -1617,22 +1617,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nzyme/validation@npm:^0.2.0, @nzyme/validation@workspace:packages/validation":
+"@nzyme/validation@npm:^0.2.1, @nzyme/validation@workspace:packages/validation":
   version: 0.0.0-use.local
   resolution: "@nzyme/validation@workspace:packages/validation"
   dependencies:
-    "@nzyme/eslint": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     "@nzyme/types": "npm:^0.2.0"
-    "@nzyme/utils": "npm:^0.2.0"
+    "@nzyme/utils": "npm:^0.2.1"
   languageName: unknown
   linkType: soft
 
-"@nzyme/vitest@npm:^0.2.0, @nzyme/vitest@workspace:packages/vitest":
+"@nzyme/vitest@npm:^0.2.1, @nzyme/vitest@workspace:packages/vitest":
   version: 0.0.0-use.local
   resolution: "@nzyme/vitest@workspace:packages/vitest"
   dependencies:
-    "@nzyme/eslint": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     date-fns: "npm:^4.1.0"
     tslib: "npm:^2.8.1"
@@ -1640,12 +1640,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nzyme/vue-ioc@npm:^0.2.0, @nzyme/vue-ioc@workspace:packages/vue-ioc":
+"@nzyme/vue-ioc@npm:^0.2.1, @nzyme/vue-ioc@workspace:packages/vue-ioc":
   version: 0.0.0-use.local
   resolution: "@nzyme/vue-ioc@workspace:packages/vue-ioc"
   dependencies:
-    "@nzyme/eslint": "npm:^0.2.0"
-    "@nzyme/ioc": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
+    "@nzyme/ioc": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     "@nzyme/types": "npm:^0.2.0"
     vue: "npm:^3.5.13"
@@ -1656,42 +1656,42 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/vue-transitions@workspace:packages/vue-transitions"
   dependencies:
-    "@nzyme/dom-utils": "npm:^0.2.0"
-    "@nzyme/eslint": "npm:^0.2.0"
+    "@nzyme/dom-utils": "npm:^0.2.1"
+    "@nzyme/eslint": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     "@nzyme/types": "npm:^0.2.0"
-    "@nzyme/utils": "npm:^0.2.0"
-    "@nzyme/vue": "npm:^0.2.0"
-    "@nzyme/vue-utils": "npm:^0.2.0"
+    "@nzyme/utils": "npm:^0.2.1"
+    "@nzyme/vue": "npm:^0.2.1"
+    "@nzyme/vue-utils": "npm:^0.2.1"
     vue: "npm:^3.5.13"
   languageName: unknown
   linkType: soft
 
-"@nzyme/vue-utils@npm:^0.2.0, @nzyme/vue-utils@workspace:packages/vue-utils":
+"@nzyme/vue-utils@npm:^0.2.1, @nzyme/vue-utils@workspace:packages/vue-utils":
   version: 0.0.0-use.local
   resolution: "@nzyme/vue-utils@workspace:packages/vue-utils"
   dependencies:
-    "@nzyme/dom-utils": "npm:^0.2.0"
-    "@nzyme/eslint": "npm:^0.2.0"
+    "@nzyme/dom-utils": "npm:^0.2.1"
+    "@nzyme/eslint": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     "@nzyme/types": "npm:^0.2.0"
-    "@nzyme/utils": "npm:^0.2.0"
+    "@nzyme/utils": "npm:^0.2.1"
     vue: "npm:^3.5.13"
   languageName: unknown
   linkType: soft
 
-"@nzyme/vue@npm:^0.2.0, @nzyme/vue@workspace:packages/vue":
+"@nzyme/vue@npm:^0.2.1, @nzyme/vue@workspace:packages/vue":
   version: 0.0.0-use.local
   resolution: "@nzyme/vue@workspace:packages/vue"
   dependencies:
-    "@nzyme/dom-utils": "npm:^0.2.0"
-    "@nzyme/eslint": "npm:^0.2.0"
-    "@nzyme/ioc": "npm:^0.2.0"
+    "@nzyme/dom-utils": "npm:^0.2.1"
+    "@nzyme/eslint": "npm:^0.2.1"
+    "@nzyme/ioc": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     "@nzyme/types": "npm:^0.2.0"
-    "@nzyme/utils": "npm:^0.2.0"
-    "@nzyme/vue-ioc": "npm:^0.2.0"
-    "@nzyme/vue-utils": "npm:^0.2.0"
+    "@nzyme/utils": "npm:^0.2.1"
+    "@nzyme/vue-ioc": "npm:^0.2.1"
+    "@nzyme/vue-utils": "npm:^0.2.1"
     "@types/lodash.debounce": "npm:^4.0.9"
     lodash.debounce: "npm:^4.0.8"
     sass: "npm:1.75.0"
@@ -1699,11 +1699,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nzyme/xml-utils@npm:^0.2.0, @nzyme/xml-utils@workspace:packages/xml-utils":
+"@nzyme/xml-utils@npm:^0.2.1, @nzyme/xml-utils@workspace:packages/xml-utils":
   version: 0.0.0-use.local
   resolution: "@nzyme/xml-utils@workspace:packages/xml-utils"
   dependencies:
-    "@nzyme/eslint": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     fast-xml-parser: "npm:^4.5.1"
   languageName: unknown
@@ -1713,11 +1713,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/zchema@workspace:packages/zchema"
   dependencies:
-    "@nzyme/eslint": "npm:^0.2.0"
+    "@nzyme/eslint": "npm:^0.2.1"
     "@nzyme/tsconfig": "npm:^0.2.0"
     "@nzyme/types": "npm:^0.2.0"
-    "@nzyme/utils": "npm:^0.2.0"
-    "@nzyme/validation": "npm:^0.2.0"
+    "@nzyme/utils": "npm:^0.2.1"
+    "@nzyme/validation": "npm:^0.2.1"
     "@types/lodash.merge": "npm:^4.6.9"
     vitest: "npm:^2.1.8"
   languageName: unknown

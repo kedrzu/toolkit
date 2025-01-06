@@ -1,6 +1,6 @@
 {
     "name": "@nzyme/utils",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "type": "module",
     "main": "./dist/index.js",
     "module": "./dist/index.js",
@@ -25,7 +25,7 @@
         "lodash.isequal": "^4.5.0"
     },
     "devDependencies": {
-        "@nzyme/eslint": "^0.2.0",
+        "@nzyme/eslint": "^0.2.1",
         "@nzyme/tsconfig": "^0.2.0",
         "@types/node": "^22.10.5",
         "vitest": "^2.1.8"
