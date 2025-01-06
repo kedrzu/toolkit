@@ -8,6 +8,9 @@
     "sideEffects": false,
     "repository": "https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
+    "publishConfig": {
+        "access": "public"
+    },
     "private": true,
     "scripts": {
         "eslint": "eslint . --fix --cache",

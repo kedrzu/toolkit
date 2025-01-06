@@ -7,6 +7,9 @@
     "types": "./dist/index.d.ts",
     "repository": "https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
+    "publishConfig": {
+        "access": "public"
+    },
     "sideEffects": false,
     "scripts": {
         "eslint": "eslint . --fix --cache",
