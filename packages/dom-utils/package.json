@@ -1,6 +1,6 @@
 {
     "name": "@nzyme/dom-utils",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "type": "module",
     "main": "./dist/index.js",
     "module": "./dist/index.js",
@@ -21,7 +21,7 @@
     },
     "dependencies": {
         "@nzyme/crypto-utils": "0.1.0",
-        "@nzyme/utils": "^0.2.2",
+        "@nzyme/utils": "^0.2.3",
         "lodash.debounce": "^4.0.8"
     },
     "devDependencies": {

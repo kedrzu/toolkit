@@ -24,3 +24,6 @@ yarn-error.log
 .env
 ./tsconfig.json
 tsconfig.dev.json
+
+.nx/cache
+.nx/workspace-data

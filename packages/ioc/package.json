@@ -1,6 +1,6 @@
 {
     "name": "@nzyme/ioc",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "type": "module",
     "main": "./dist/index.js",
     "module": "./dist/index.js",
@@ -20,13 +20,13 @@
         "build": "tsc --build"
     },
     "dependencies": {
-        "@nzyme/types": "^0.2.0",
-        "@nzyme/utils": "^0.2.2"
+        "@nzyme/types": "^0.2.3",
+        "@nzyme/utils": "^0.2.3"
     },
     "devDependencies": {
         "@nzyme/eslint": "^0.2.2",
         "@nzyme/tsconfig": "^0.2.0",
-        "@nzyme/vitest": "^0.2.2",
+        "@nzyme/vitest": "^0.2.3",
         "vitest": "^2.1.8"
     }
 }

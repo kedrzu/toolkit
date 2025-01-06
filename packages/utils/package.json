@@ -1,6 +1,6 @@
 {
     "name": "@nzyme/utils",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "type": "module",
     "main": "./dist/index.js",
     "module": "./dist/index.js",
@@ -20,7 +20,7 @@
         "build": "tsc --build"
     },
     "dependencies": {
-        "@nzyme/types": "^0.2.0",
+        "@nzyme/types": "^0.2.3",
         "@types/lodash.isequal": "^4.5.8",
         "lodash.isequal": "^4.5.0"
     },
