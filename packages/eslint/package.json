@@ -1,6 +1,6 @@
 {
     "name": "@nzyme/eslint",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "license": "MIT",
     "repository": "https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
