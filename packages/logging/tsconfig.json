@@ -6,10 +6,5 @@
         "rootDir": "./src",
         "types": ["@types/node"]
     },
-    "include": ["src"],
-    "references": [
-        {
-            "path": "../ioc/tsconfig.json"
-        }
-    ]
+    "include": ["src"]
 }

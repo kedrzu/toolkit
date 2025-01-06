@@ -6,13 +6,5 @@
         "rootDir": "./src",
         "lib": ["esnext", "esnext.asynciterable", "DOM"]
     },
-    "include": ["src/**/*.ts", "src/**/*.json"],
-    "references": [
-        {
-            "path": "../ioc/tsconfig.json"
-        },
-        {
-            "path": "../types/tsconfig.json"
-        }
-    ]
+    "include": ["src/**/*.ts", "src/**/*.json"]
 }

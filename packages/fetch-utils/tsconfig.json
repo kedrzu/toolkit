@@ -7,16 +7,5 @@
         "types": ["node"],
         "lib": ["ESNext", "DOM"]
     },
-    "include": ["src"],
-    "references": [
-        {
-            "path": "../ioc/tsconfig.json"
-        },
-        {
-            "path": "../types/tsconfig.json"
-        },
-        {
-            "path": "../xml-utils/tsconfig.json"
-        }
-    ]
+    "include": ["src"]
 }

@@ -7,13 +7,5 @@
         "types": ["@types/node"]
     },
     "include": ["src"],
-    "exclude": ["src/**/*.test.ts"],
-    "references": [
-        {
-            "path": "../utils/tsconfig.json"
-        },
-        {
-            "path": "../vitest/tsconfig.json"
-        }
-    ]
+    "exclude": ["src/**/*.test.ts"]
 }

@@ -36,15 +36,13 @@ async function processProject() {
     const cwd = process.cwd();
     const packages = await getPackages(cwd);
 
-    const tsconfigPath = path.join(cwd, './tsconfig.json');
-    const tsconfig = await loadTsConfig(tsconfigPath);
-    if (tsconfig) {
-        tsconfig.config.references = await getTsReferences({
-            tsconfig: tsconfig,
-            dependencies: packages,
-        });
-        await saveTsConfig(tsconfig);
-    }
+    const tsconfigPath = path.join(cwd, './tsconfig.dev.json');
+    const references = await getTsReferences({
+        path: tsconfigPath,
+        dependencies: packages,
+    });
+
+    await saveTsReferences(tsconfigPath, references);
 
     await Promise.all(
         packages.map(pkg =>
@@ -58,7 +56,6 @@ async function processProject() {
 
 async function processPackage(params: { pkg: Package; packages: Package[] }) {
     const tsconfig = await loadTsConfigForPackage(params.pkg);
-
     if (!tsconfig) {
         return;
     }
@@ -73,15 +70,15 @@ async function processPackage(params: { pkg: Package; packages: Package[] }) {
         .filter(Boolean);
 
     const references = await getTsReferences({
-        tsconfig: tsconfig,
+        path: tsconfig.path,
         dependencies: dependencies,
     });
 
-    tsconfig.config.references = references;
-    await saveTsConfig(tsconfig);
+    const configPath = path.join(params.pkg.location, 'tsconfig.dev.json');
+    await saveTsReferences(configPath, references);
 }
 
-async function getTsReferences(params: { tsconfig: TsConfig; dependencies: Package[] }) {
+async function getTsReferences(params: { path: string; dependencies: Package[] }) {
     const references: { path: string }[] = [];
 
     for (const dep of params.dependencies) {
@@ -98,13 +95,17 @@ async function getTsReferences(params: { tsconfig: TsConfig; dependencies: Packa
             continue;
         }
 
-        let relativePath = path.relative(path.dirname(params.tsconfig.path), depTsConfig.path);
+        let relativePath = path.relative(path.dirname(params.path), depTsConfig.path);
         if (path.sep === '\\') {
             relativePath = relativePath.replace(/\\/g, '/');
         }
 
         if (!relativePath.startsWith('./') && !relativePath.startsWith('../')) {
             relativePath = './' + relativePath;
+        }
+
+        if (relativePath.endsWith('tsconfig.json')) {
+            relativePath = relativePath.slice(0, -13) + 'tsconfig.dev.json';
         }
 
         references.push({
@@ -169,16 +170,20 @@ function resolveTsConfigPath(cwd: string, filePath: string) {
     return fileURLToPath(import.meta.resolve(filePath));
 }
 
-async function saveTsConfig(tsconfig: TsConfig) {
-    const prettierConfig = await prettier.resolveConfig(tsconfig.path);
+async function saveTsReferences(configPath: string, references: { path: string }[]) {
+    const config = {
+        extends: './tsconfig.json',
+        references,
+    };
 
-    let configJson = json.stringify(tsconfig.config, undefined, 2);
+    let configJson = json.stringify(config, undefined, 2);
+
+    const prettierConfig = await prettier.resolveConfig(configPath);
     configJson = await prettier.format(configJson, {
         ...prettierConfig,
         parser: 'json',
     });
 
-    await fs.writeFile(tsconfig.path, configJson, {
-        encoding: 'utf8',
-    });
+    console.log(configPath);
+    await fs.writeFile(configPath, configJson, { encoding: 'utf8' });
 }

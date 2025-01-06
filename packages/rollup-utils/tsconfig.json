@@ -6,16 +6,5 @@
         "rootDir": "./src",
         "types": ["@types/node"]
     },
-    "include": ["src"],
-    "references": [
-        {
-            "path": "../esm/tsconfig.json"
-        },
-        {
-            "path": "../logging/tsconfig.json"
-        },
-        {
-            "path": "../utils/tsconfig.json"
-        }
-    ]
+    "include": ["src"]
 }

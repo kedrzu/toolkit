@@ -22,3 +22,5 @@ yarn-error.log
 
 .turbo
 .env
+./tsconfig.json
+tsconfig.dev.json

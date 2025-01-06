@@ -1,18 +1,8 @@
 {
-    "extends": "../../tsconfig.tests.json",
+    "extends": "../tsconfig.json",
     "compilerOptions": {
-        "rootDir": "."
+        "rootDir": ".",
+        "noEmit": true
     },
-    "include": ["./src/**/*.ts", "./vitest.config.ts"],
-    "references": [
-        {
-            "path": "../types/tsconfig.json"
-        },
-        {
-            "path": "../utils/tsconfig.json"
-        },
-        {
-            "path": "../validate/tsconfig.json"
-        }
-    ]
+    "include": ["./src/**/*.ts", "./vitest.config.ts"]
 }

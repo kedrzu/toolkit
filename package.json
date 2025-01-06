@@ -2,14 +2,16 @@
     "license": "MIT",
     "repository": "https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
+    "packageManager": "yarn@4.1.0",
     "workspaces": [
         "packages/*"
     ],
     "scripts": {
         "monorepo": "nzyme monorepo",
-        "clean": "del  \"**/dist\" \"**/.tsbuildinfo\" \"!**/node_modules/**\"",
-        "build": "tsc --build",
-        "watch": "tsc --build --watch",
+        "clean": "del  \"**/dist\" \"**/.tsbuildinfo\" \"**/tsconfig.dev.json\" \"!**/node_modules/**\"",
+        "setup": "yarn && turbo run build && yarn monorepo",
+        "build": "tsc --build tsconfig.dev.json",
+        "watch": "yarn build --watch",
         "publish": "auto shipit",
         "dev": "yarn && yarn monorepo && yarn watch",
         "upgrade": "yarn upgrade-interactive"
@@ -18,11 +20,13 @@
         "@auto-it/conventional-commits": "^11.3.0",
         "@auto-it/npm": "^11.3.0",
         "@auto-it/released": "^11.3.0",
-        "@nzyme/cli": "^0.1.0",
+        "@nzyme/cli": "*",
         "auto": "^11.3.0",
+        "del-cli": "^6.0.0",
         "lerna": "^8.1.9",
         "prettier": "^3.4.2",
         "ts-node": "^10.9.2",
+        "turbo": "^2.3.3",
         "typescript": "^5.7.2"
     },
     "depcheck": {
@@ -38,6 +42,6 @@
         ]
     },
     "dependencies": {
-        "del-cli": "^6.0.0"
+        "vitest": "^2.1.8"
     }
 }

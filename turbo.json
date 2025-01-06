@@ -1,0 +1,18 @@
+{
+    "$schema": "https://turbo.build/schema.json",
+    "tasks": {
+        "build": {
+            "cache": true,
+            "outputs": ["dist/**"],
+            "dependsOn": ["^build"]
+        },
+        "codegen": {
+            "cache": false
+        },
+        "eslint": {
+            "dependsOn": [],
+            "cache": false
+        }
+    },
+    "ui": "stream"
+}

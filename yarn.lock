@@ -1289,33 +1289,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nzyme/cli@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "@nzyme/cli@npm:0.1.0"
-  dependencies:
-    "@lerna/package": "npm:^6.4.1"
-    "@lerna/project": "npm:^6.4.1"
-    "@types/fs-extra": "npm:^11.0.4"
-    chalk: "npm:^5.4.1"
-    comment-json: "npm:^4.2.5"
-    compare-versions: "npm:^6.1.1"
-    consola: "npm:^3.3.3"
-    depcheck: "npm:^1.4.7"
-    fs-extra: "npm:^11.2.0"
-    ink: "npm:^5.1.0"
-    lodash.merge: "npm:^4.6.2"
-    pastel: "npm:^3.0.0"
-    prettier: "npm:^3.4.2"
-    react: "npm:^18.0.0"
-    ts-node: "npm:^10.9.2"
-    zod: "npm:^3.24.1"
-  bin:
-    nzyme: dist/cli.js
-  checksum: 10c0/c8fca7886158663894c4b3cd72f691434eb6e3879cd6625447ee76f99161dec7e0e8cae40bf041556f9483836b1f0f46a9cde601f56811f169fcc1051df6ab31
-  languageName: node
-  linkType: hard
-
-"@nzyme/cli@workspace:packages/cli":
+"@nzyme/cli@npm:*, @nzyme/cli@workspace:packages/cli":
   version: 0.0.0-use.local
   resolution: "@nzyme/cli@workspace:packages/cli"
   dependencies:
@@ -6405,9 +6379,9 @@ __metadata:
   linkType: hard
 
 "fast-uri@npm:^3.0.1":
-  version: 3.0.4
-  resolution: "fast-uri@npm:3.0.4"
-  checksum: 10c0/802969cd9902678026021e8cc2df7cab989bee56a094f17f38b39908ac422b48ed05288042b60f472479c4a4311ba021fc7266de5cfde7ed5ec7538b8b910ada
+  version: 3.0.5
+  resolution: "fast-uri@npm:3.0.5"
+  checksum: 10c0/f5501fd849e02f16f1730d2c8628078718c492b5bc00198068bc5c2880363ae948287fdc8cebfff47465229b517dbeaf668866fbabdff829b4138a899e5c2ba3
   languageName: node
   linkType: hard
 
@@ -11498,13 +11472,15 @@ __metadata:
     "@auto-it/conventional-commits": "npm:^11.3.0"
     "@auto-it/npm": "npm:^11.3.0"
     "@auto-it/released": "npm:^11.3.0"
-    "@nzyme/cli": "npm:^0.1.0"
+    "@nzyme/cli": "npm:*"
     auto: "npm:^11.3.0"
     del-cli: "npm:^6.0.0"
     lerna: "npm:^8.1.9"
     prettier: "npm:^3.4.2"
     ts-node: "npm:^10.9.2"
+    turbo: "npm:^2.3.3"
     typescript: "npm:^5.7.2"
+    vitest: "npm:^2.1.8"
   languageName: unknown
   linkType: soft
 
@@ -12712,6 +12688,77 @@ __metadata:
     debug: "npm:^4.3.4"
     make-fetch-happen: "npm:^13.0.1"
   checksum: 10c0/7c17b097571f001730d7be0aeaec6bec46ed2f25bf73990b1133c383d511a1ce65f831e5d6d78770940a85b67664576ff0e4c98e5421bab6d33ff36e4be500c8
+  languageName: node
+  linkType: hard
+
+"turbo-darwin-64@npm:2.3.3":
+  version: 2.3.3
+  resolution: "turbo-darwin-64@npm:2.3.3"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"turbo-darwin-arm64@npm:2.3.3":
+  version: 2.3.3
+  resolution: "turbo-darwin-arm64@npm:2.3.3"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"turbo-linux-64@npm:2.3.3":
+  version: 2.3.3
+  resolution: "turbo-linux-64@npm:2.3.3"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
+"turbo-linux-arm64@npm:2.3.3":
+  version: 2.3.3
+  resolution: "turbo-linux-arm64@npm:2.3.3"
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"turbo-windows-64@npm:2.3.3":
+  version: 2.3.3
+  resolution: "turbo-windows-64@npm:2.3.3"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"turbo-windows-arm64@npm:2.3.3":
+  version: 2.3.3
+  resolution: "turbo-windows-arm64@npm:2.3.3"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"turbo@npm:^2.3.3":
+  version: 2.3.3
+  resolution: "turbo@npm:2.3.3"
+  dependencies:
+    turbo-darwin-64: "npm:2.3.3"
+    turbo-darwin-arm64: "npm:2.3.3"
+    turbo-linux-64: "npm:2.3.3"
+    turbo-linux-arm64: "npm:2.3.3"
+    turbo-windows-64: "npm:2.3.3"
+    turbo-windows-arm64: "npm:2.3.3"
+  dependenciesMeta:
+    turbo-darwin-64:
+      optional: true
+    turbo-darwin-arm64:
+      optional: true
+    turbo-linux-64:
+      optional: true
+    turbo-linux-arm64:
+      optional: true
+    turbo-windows-64:
+      optional: true
+    turbo-windows-arm64:
+      optional: true
+  bin:
+    turbo: bin/turbo
+  checksum: 10c0/9aab52fb868a2b6246f41fe2343dec56c70252a9cb7729a3ea183458cfa728c1445d1b98882dd43542f0ffd46524e8ba7776fe0925e31a86904b113222778fa5
   languageName: node
   linkType: hard
 

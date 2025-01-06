@@ -6,6 +6,5 @@
         "rootDir": "./src",
         "types": ["@types/node"]
     },
-    "include": ["src"],
-    "references": []
+    "include": ["src"]
 }

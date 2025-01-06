@@ -6,25 +6,5 @@
         "rootDir": "./src",
         "composite": false
     },
-    "include": ["./src/**/*.ts", "./src/**/*.tsx", "./src/**/*.json", "./src/**/*.scss"],
-    "references": [
-        {
-            "path": "../dom-utils/tsconfig.json"
-        },
-        {
-            "path": "../ioc/tsconfig.json"
-        },
-        {
-            "path": "../types/tsconfig.json"
-        },
-        {
-            "path": "../utils/tsconfig.json"
-        },
-        {
-            "path": "../vue-ioc/tsconfig.json"
-        },
-        {
-            "path": "../vue-utils/tsconfig.json"
-        }
-    ]
+    "include": ["./src/**/*.ts", "./src/**/*.tsx", "./src/**/*.json", "./src/**/*.scss"]
 }

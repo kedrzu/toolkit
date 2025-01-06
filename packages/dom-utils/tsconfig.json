@@ -6,13 +6,5 @@
         "rootDir": "./src",
         "lib": ["DOM", "DOM.Iterable", "ESNext"]
     },
-    "include": ["src"],
-    "references": [
-        {
-            "path": "../crypto-utils/tsconfig.json"
-        },
-        {
-            "path": "../utils/tsconfig.json"
-        }
-    ]
+    "include": ["src"]
 }

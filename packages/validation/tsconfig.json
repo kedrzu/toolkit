@@ -5,13 +5,5 @@
         "tsBuildInfoFile": "./.tsbuildinfo",
         "rootDir": "./src"
     },
-    "include": ["src/**/*.ts", "src/**/*.json"],
-    "references": [
-        {
-            "path": "../types/tsconfig.json"
-        },
-        {
-            "path": "../utils/tsconfig.json"
-        }
-    ]
+    "include": ["src/**/*.ts", "src/**/*.json"]
 }

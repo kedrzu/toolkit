@@ -6,13 +6,5 @@
         "rootDir": "./src",
         "types": ["@types/node"]
     },
-    "include": ["src"],
-    "references": [
-        {
-            "path": "../types/tsconfig.json"
-        },
-        {
-            "path": "../utils/tsconfig.json"
-        }
-    ]
+    "include": ["src"]
 }
