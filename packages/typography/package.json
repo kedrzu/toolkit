@@ -12,6 +12,9 @@
     "publishConfig": {
         "access": "public"
     },
+    "files": [
+        "dist"
+    ],
     "private": true,
     "scripts": {
         "eslint": "eslint . --fix --cache",

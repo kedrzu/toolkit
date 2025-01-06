@@ -2,14 +2,12 @@
     "license": "MIT",
     "repository": "https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
-    "publishConfig": {
-        "access": "public"
-    },
     "workspaces": [
         "packages/*"
     ],
     "scripts": {
         "monorepo": "nzyme monorepo",
+        "clean": "del  \"**/dist\" \"**/.tsbuildinfo\" \"!**/node_modules/**\"",
         "build": "tsc --build",
         "watch": "tsc --build --watch",
         "publish": "auto shipit",
@@ -38,5 +36,8 @@
             "conventional-commits",
             "released"
         ]
+    },
+    "dependencies": {
+        "del-cli": "^6.0.0"
     }
 }

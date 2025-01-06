@@ -7,6 +7,9 @@
     "publishConfig": {
         "access": "public"
     },
+    "files": [
+        "dist"
+    ],
     "sideEffects": false,
     "main": "./base.json",
     "dependencies": {

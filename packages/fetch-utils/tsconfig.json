@@ -2,7 +2,7 @@
     "extends": "@nzyme/tsconfig/base.json",
     "compilerOptions": {
         "outDir": "./dist",
-        "tsBuildInfoFile": "./dist/.tsbuildinfo",
+        "tsBuildInfoFile": "./.tsbuildinfo",
         "rootDir": "./src",
         "types": ["node"],
         "lib": ["ESNext", "DOM"]

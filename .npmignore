@@ -1,7 +1,0 @@
-!dist
-src
-tsconfig.tests.json
-.tsbuildinfo
-.eslintrc.cjs
-tsconfig.tests.json
-vitest.config.ts

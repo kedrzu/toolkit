@@ -10,6 +10,9 @@
     "publishConfig": {
         "access": "public"
     },
+    "files": [
+        "dist"
+    ],
     "sideEffects": false,
     "scripts": {
         "eslint": "eslint . --fix --cache"
