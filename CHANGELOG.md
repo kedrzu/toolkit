@@ -2,6 +2,19 @@
 
 #### 🐛 Bug Fix
 
+- `@nzyme/eslint@0.2.2`
+  - fix(eslint): fix typescript config ([@kedrzu](https://github.com/kedrzu))
+
+#### Authors: 1
+
+- Michał Kędrzyński ([@kedrzu](https://github.com/kedrzu))
+
+---
+
+# (Mon Jan 06 2025)
+
+#### 🐛 Bug Fix
+
 - `@nzyme/eslint@0.2.1`
   - fix(eslint): fix publish config (kedrzu@gmail.com)
 

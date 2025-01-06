@@ -1,3 +1,15 @@
+# v0.2.2 (Mon Jan 06 2025)
+
+#### 🐛 Bug Fix
+
+- fix(eslint): fix typescript config ([@kedrzu](https://github.com/kedrzu))
+
+#### Authors: 1
+
+- Michał Kędrzyński ([@kedrzu](https://github.com/kedrzu))
+
+---
+
 # v0.2.1 (Mon Jan 06 2025)
 
 #### 🐛 Bug Fix
