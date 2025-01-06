@@ -3,6 +3,7 @@ module.exports = {
         node: true,
         browser: true,
     },
+    files: ['*.ts', '*.tsx'],
     // Do not check eslint config files, because they collide with typecsript config.
     ignorePatterns: ['.eslintrc.cjs', 'dist/**/*', 'node_modules/**/*'],
     parser: '@typescript-eslint/parser',

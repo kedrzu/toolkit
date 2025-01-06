@@ -1,12 +1,12 @@
 {
     "name": "@nzyme/eslint",
     "version": "0.1.0",
+    "license": "MIT",
     "repository": "https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
     "publishConfig": {
         "access": "public"
     },
-    "license": "MIT",
     "sideEffects": false,
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "^8.19.0",

@@ -1,30 +1,43 @@
 {
-    "name": "@nzyme/project-tools",
+    "name": "@nzyme/cli",
     "version": "0.1.0",
+    "license": "MIT",
     "repository": "https://github.com/kedrzu/nzyme.git",
-    "author": "",
-    "type": "module",
-    "main": "./dist/index.js",
-    "module": "./dist/index.js",
-    "types": "./dist/index.d.ts",
-    "scripts": {
-        "eslint": "eslint . --fix --cache",
-        "build": "tsc --build"
+    "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
+    "publishConfig": {
+        "access": "public"
     },
+    "bin": {
+        "nzyme": "./dist/cli.js"
+    },
+    "type": "module",
+    "engines": {
+        "node": ">=20"
+    },
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc --watch"
+    },
+    "files": [
+        "dist"
+    ],
     "dependencies": {
         "@lerna/package": "^6.4.1",
         "@lerna/project": "^6.4.1",
         "@types/fs-extra": "^11.0.4",
         "chalk": "^5.4.1",
-        "comment-json": "^4.2.3",
-        "compare-versions": "^6.1.0",
+        "comment-json": "^4.2.5",
+        "compare-versions": "^6.1.1",
         "consola": "^3.3.3",
         "depcheck": "^1.4.7",
-        "dotenv": "^16.4.7",
         "fs-extra": "^11.2.0",
+        "ink": "^5.1.0",
         "lodash.merge": "^4.6.2",
+        "pastel": "^3.0.0",
         "prettier": "^3.4.2",
-        "ts-node": "^10.9.2"
+        "react": "^18.0.0",
+        "ts-node": "^10.9.2",
+        "zod": "^3.24.1"
     },
     "devDependencies": {
         "@nzyme/eslint": "^0.1.0",
@@ -33,6 +46,10 @@
         "@types/lerna__project": "^5.1.2",
         "@types/lodash.merge": "^4.6.9",
         "@types/node": "^22.10.5",
+        "@types/react": "^18.0.0",
+        "eslint-plugin-react": "^7.37.3",
+        "eslint-plugin-react-hooks": "^5.1.0",
+        "ts-node": "^10.9.2",
         "typescript": "^5.7.2"
     }
 }

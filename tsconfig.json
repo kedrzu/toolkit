@@ -6,6 +6,9 @@
             "path": "./packages/aws-cdk/tsconfig.json"
         },
         {
+            "path": "./packages/cli/tsconfig.json"
+        },
+        {
             "path": "./packages/crypto-utils/tsconfig.json"
         },
         {
@@ -31,9 +34,6 @@
         },
         {
             "path": "./packages/node-utils/tsconfig.json"
-        },
-        {
-            "path": "./packages/project-tools/tsconfig.json"
         },
         {
             "path": "./packages/project-utils/tsconfig.json"

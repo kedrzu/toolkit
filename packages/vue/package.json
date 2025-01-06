@@ -15,6 +15,7 @@
         }
     },
     "sideEffects": false,
+    "license": "MIT",
     "repository": "https://github.com/kedrzu/nzyme.git",
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
     "publishConfig": {

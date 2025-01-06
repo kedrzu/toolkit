@@ -1,15 +1,14 @@
 import fs from 'fs/promises';
 import path from 'path';
-
+import { fileURLToPath } from 'url';
 import type { Package } from '@lerna/package';
 import { getPackages } from '@lerna/project';
 import * as json from 'comment-json';
+import fsExtra from 'fs-extra/esm';
 import merge from 'lodash.merge';
 import prettier from 'prettier';
-
-import { isMainFile } from './isMainFile.js';
-import { fileURLToPath } from 'url';
-import fsExtra from 'fs-extra/esm';
+import { Text } from 'ink';
+import React, { useEffect, useState } from 'react';
 
 interface TsConfig {
     path: string;
@@ -19,11 +18,21 @@ interface TsConfig {
 
 const tsConfigsCache = new Map<string, TsConfig | null>();
 
-if (isMainFile(import.meta)) {
-    await monorepo();
+export default function Monorepo() {
+    const [done, setDone] = useState(false);
+
+    useEffect(() => {
+        processProject().then(() => setDone(true));
+    }, []);
+
+    if (!done) {
+        return <Text>Processing...</Text>;
+    }
+
+    return <Text>Done!</Text>;
 }
 
-export async function monorepo() {
+async function processProject() {
     const cwd = process.cwd();
     const packages = await getPackages(cwd);
 

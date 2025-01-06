@@ -4,12 +4,18 @@ import chalk from 'chalk';
 import { compareVersions } from 'compare-versions';
 import consola from 'consola';
 import depcheckImport from 'depcheck';
+import zod from 'zod';
 
-interface CommandFlags {
-    fix: boolean;
-}
+export const options = zod.object({
+    fix: zod.boolean().default(false).describe('Fix dependencies'),
+});
 
-export async function depcheck(flags: CommandFlags) {
+type Options = zod.infer<typeof options>;
+type Props = {
+    options: Options;
+};
+
+export default async function Depcheck({ options }: Props) {
     const cwd = process.cwd();
     const packages = await getPackages(cwd);
 
@@ -36,13 +42,13 @@ export async function depcheck(flags: CommandFlags) {
     }
 
     packages.sort((a, b) => a.name.localeCompare(b.name));
-    const promises = packages.map(p => processPackage(p, flags, deps));
+    const promises = packages.map(p => processPackage(p, options, deps));
     await Promise.all(promises);
 }
 
-async function processPackage(pkg: Package, flags: CommandFlags, deps: Record<string, string>) {
-    const options = getOptions(pkg);
-    const result = await depcheckImport(pkg.location, options);
+async function processPackage(pkg: Package, options: Options, deps: Record<string, string>) {
+    const pkgConfig = getOptions(pkg);
+    const result = await depcheckImport(pkg.location, pkgConfig);
     const toWrite: string[] = [];
 
     let dependencies = pkg.dependencies;
@@ -60,7 +66,7 @@ async function processPackage(pkg: Package, flags: CommandFlags, deps: Record<st
     if (result.dependencies.length) {
         toWrite.push(`\n  Unused dependencies:`);
         for (const dep of result.dependencies) {
-            if (flags.fix) {
+            if (options.fix) {
                 delete dependencies[dep];
                 toWrite.push(`  ${chalk.green(dep)} (removed)`);
             } else {
@@ -72,7 +78,7 @@ async function processPackage(pkg: Package, flags: CommandFlags, deps: Record<st
     if (result.devDependencies.length) {
         toWrite.push(`\n  Unused dev dependencies:`);
         for (const dep of result.devDependencies) {
-            if (flags.fix) {
+            if (options.fix) {
                 delete devDependencies[dep];
                 toWrite.push(`  ${chalk.green(dep)} (removed)`);
             } else {
@@ -85,14 +91,14 @@ async function processPackage(pkg: Package, flags: CommandFlags, deps: Record<st
         toWrite.push(`\n  Missing dependencies:`);
         for (const dep in result.missing) {
             if (dep === pkg.name) {
-                if (flags.fix && deps[dep]) {
+                if (options.fix && deps[dep]) {
                     delete devDependencies[dep];
                     toWrite.push(`  ${chalk.green(dep)} (removed self reference)`);
                 } else {
                     toWrite.push(`  ${chalk.yellow(dep)} (self reference)`);
                 }
             } else {
-                if (flags.fix && deps[dep]) {
+                if (options.fix && deps[dep]) {
                     dependencies[dep] = deps[dep];
                     toWrite.push(`  ${chalk.green(dep)} (added version ${deps[dep]})`);
                 } else {
@@ -126,7 +132,7 @@ async function processPackage(pkg: Package, flags: CommandFlags, deps: Record<st
         }
     }
 
-    if (flags.fix) {
+    if (options.fix) {
         // Make sure there are no self references
         delete dependencies[pkg.name];
         delete devDependencies[pkg.name];
