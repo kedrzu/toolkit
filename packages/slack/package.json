@@ -1,6 +1,6 @@
 {
     "name": "@nzyme/slack",
-    "version": "0.2.3",
+    "version": "0.3.0",
     "type": "module",
     "main": "./dist/index.js",
     "module": "./dist/index.js",
@@ -20,11 +20,11 @@
         "build": "tsc --build"
     },
     "dependencies": {
-        "@nzyme/utils": "^0.2.3",
+        "@nzyme/utils": "^0.3.0",
         "@slack/web-api": "7.8.0"
     },
     "devDependencies": {
-        "@nzyme/eslint": "^0.2.2",
-        "@nzyme/tsconfig": "^0.2.0"
+        "@nzyme/eslint": "^0.3.0",
+        "@nzyme/tsconfig": "^0.3.0"
     }
 }
