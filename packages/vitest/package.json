@@ -2,7 +2,10 @@
     "name": "@nzyme/vitest",
     "version": "0.3.0",
     "license": "MIT",
-    "repository": "https://github.com/kedrzu/nzyme.git",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kedrzu/nzyme.git"
+    },
     "author": "Michał Kędrzyński <m.kedrzynski@gmail.com>",
     "publishConfig": {
         "access": "public"

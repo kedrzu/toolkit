@@ -6,12 +6,13 @@
             "outputs": ["dist/**"],
             "dependsOn": ["^build"]
         },
-        "codegen": {
-            "cache": false
+        "dev": {
+            "cache": false,
+            "persistent": true
         },
-        "eslint": {
-            "dependsOn": [],
-            "cache": false
+        "watch": {
+            "cache": false,
+            "persistent": true
         }
     },
     "ui": "stream"
