@@ -57,6 +57,8 @@ export type InferNonNull<TSchema extends SchemaAny> =
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     TSchema extends Schema<infer V, any> ? V : never;
 
+export type InferOr<TSchema, T = undefined> = TSchema extends Schema ? Infer<TSchema> : T;
+
 export type Infer<TSchema extends SchemaAny> =
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     TSchema extends Schema<infer V, any>
