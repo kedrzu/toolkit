@@ -1,3 +1,13 @@
+## 0.4.0 (2025-01-13)
+
+### 🚀 Features
+
+- **zchema:** added InferOr type ([051bd1a](https://github.com/kedrzu/nzyme/commit/051bd1a))
+
+### ❤️ Thank You
+
+- Michał Kędrzyński
+
 ## 0.3.0 (2025-01-07)
 
 ### 🚀 Features
