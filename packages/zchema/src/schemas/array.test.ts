@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest';
 
-import { minValidator, regexValidator } from '@nzyme/validate';
+import { minValidator, regexValidator } from '@nzyme/validation';
 
 import { array } from './array.js';
 import { number } from './number.js';
@@ -83,8 +83,8 @@ test('validate array of objects', () => {
 
     expect(invalidResult).toEqual({
         '1.string': ['Must be lowercase letters'],
-        '2.number': ['Minimalna wartość to 10'],
-        '3.number': ['Minimalna wartość to 10'],
+        '2.number': ['Minimum value is 10'],
+        '3.number': ['Minimum value is 10'],
         '3.string': ['Must be lowercase letters'],
         '': ['Must have at most 2 elements'],
     });
