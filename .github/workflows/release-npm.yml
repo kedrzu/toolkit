@@ -1,0 +1,44 @@
+name: Release new version
+on: workflow_dispatch
+jobs:
+    release:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                  fetch-tags: true
+                  fetch-depth: 0
+                  ref: release
+
+            - name: Setup Git
+              run: |
+                  git config --local user.email "actions@github.com"
+                  git config --local user.name "Github Actions"
+
+            - name: Merge main to release
+              id: mergeMain
+              run: |
+                  git merge --no-ff origin/main -m "chore: release new version"
+                  git push
+
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: latest
+
+            - run: yarn install --frozen-lockfile
+            - run: yarn turbo run build
+            - run: yarn test
+            - run: yarn release
+              env:
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            - uses: actions/checkout@v4
+              with:
+                  ref: main
+
+            - name: Merge release to main
+              id: mergeRelease
+              run: |
+                  git merge --no-ff release -m "chore: auto-merge release -> main"
+                  git push
