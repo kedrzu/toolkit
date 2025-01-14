@@ -17,6 +17,8 @@
         "watch": "yarn build --watch",
         "release": "nx release --yes",
         "dev": "yarn && yarn monorepo && yarn watch",
+        "test": "vitest run",
+        "coverage": "vitest run --coverage",
         "upgrade": "yarn upgrade-interactive"
     },
     "devDependencies": {
