@@ -30,7 +30,7 @@
     "devDependencies": {
         "@nzyme/eslint": "^0.4.0",
         "@nzyme/tsconfig": "^0.4.0",
-        "@types/node": "^22.10.5",
+        "@types/node": "^22.10.6",
         "vitest": "^2.1.8"
     }
 }
