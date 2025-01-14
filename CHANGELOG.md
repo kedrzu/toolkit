@@ -1,3 +1,13 @@
+## 0.4.1 (2025-01-14)
+
+### 🩹 Fixes
+
+- updates dependencies ([8d4d2ce](https://github.com/kedrzu/nzyme/commit/8d4d2ce))
+
+### ❤️ Thank You
+
+- Michał Kędrzyński
+
 ## 0.4.0 (2025-01-13)
 
 ### 🚀 Features

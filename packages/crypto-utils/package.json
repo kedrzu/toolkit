@@ -1,6 +1,6 @@
 {
     "name": "@nzyme/crypto-utils",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "type": "module",
     "exports": {
         "node": {
@@ -30,14 +30,14 @@
         "build": "tsc --build"
     },
     "dependencies": {
-        "@nzyme/types": "^0.4.0",
-        "@nzyme/utils": "^0.4.0",
+        "@nzyme/types": "^0.4.1",
+        "@nzyme/utils": "^0.4.1",
         "spark-md5": "^3.0.2"
     },
     "devDependencies": {
-        "@nzyme/eslint": "^0.4.0",
-        "@nzyme/tsconfig": "^0.4.0",
-        "@nzyme/vitest": "^0.4.0",
+        "@nzyme/eslint": "^0.4.1",
+        "@nzyme/tsconfig": "^0.4.1",
+        "@nzyme/vitest": "^0.4.1",
         "@types/node": "^22.10.6",
         "@types/spark-md5": "^3.0.5"
     },
