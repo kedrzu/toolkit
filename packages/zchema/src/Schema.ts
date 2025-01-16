@@ -41,7 +41,7 @@ export type SchemaOptionsOf<S extends SchemaAny> = S extends Schema<any, infer O
 
 export type Schema<V = unknown, O extends SchemaOptions<V> = SchemaOptions<V>> = SchemaProps<V> & {
     proto: SchemaProto<V, unknown>;
-    base: SchemaBase;
+    type: SchemaBase;
     nullable: IfAny<O, boolean, IfUnknown<O['nullable'], false, Exclude<O['nullable'], undefined>>>;
     optional: IfAny<O, boolean, IfUnknown<O['optional'], false, Exclude<O['optional'], undefined>>>;
     default?: () => V;

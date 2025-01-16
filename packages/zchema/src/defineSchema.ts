@@ -39,7 +39,7 @@ export function defineSchema<
             nullable: options.nullable ?? false,
             optional: options.optional ?? false,
             validators: (options.validators ?? []) as SchemaAny['validators'],
-            base: SchemaBase,
+            type: SchemaBase,
             proto: protoFactory(options) as SchemaAny['proto'],
         };
 

@@ -10,6 +10,7 @@ export * from './schemas/bigint.js';
 export * from './schemas/date.js';
 export * from './schemas/integer.js';
 export * from './schemas/union.js';
+export * from './schemas/tuple.js';
 export type * from './schemas/enum.js';
 export { enumSchema as enum } from './schemas/enum.js';
 export type * from './schemas/const.js';
@@ -20,6 +21,7 @@ export { voidSchema as void } from './schemas/void.js';
 
 export * from './utils/coerce.js';
 export * from './utils/coerceNonNull.js';
+export * from './utils/fromJsonSchema.js';
 export * from './utils/extend.js';
 export * from './utils/isSchema.js';
 export * from './utils/nonNullable.js';

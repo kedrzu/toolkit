@@ -28,9 +28,9 @@
     "dependencies": {
         "@lerna/package": "^6.4.1",
         "@lerna/project": "^6.4.1",
-        "@oclif/core": "^4.0.29",
-        "@oclif/plugin-help": "^6.2.15",
-        "@oclif/plugin-version": "^2.2.15",
+        "@oclif/core": "^4.2.3",
+        "@oclif/plugin-help": "^6.2.21",
+        "@oclif/plugin-version": "^2.2.20",
         "@types/fs-extra": "^11.0.4",
         "chalk": "^5.4.1",
         "comment-json": "^4.2.5",
@@ -53,7 +53,7 @@
         "@types/source-map-support": "^0.5.10",
         "eslint-plugin-react": "^7.37.4",
         "eslint-plugin-react-hooks": "^5.1.0",
-        "oclif": "^4.15.9",
+        "oclif": "^4.17.13",
         "ts-node": "^10.9.2",
         "typescript": "^5.7.3"
     },
