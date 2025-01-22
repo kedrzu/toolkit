@@ -30,6 +30,6 @@
         "@nzyme/eslint": "^0.4.1",
         "@nzyme/tsconfig": "^0.4.1",
         "@nzyme/vitest": "^0.4.1",
-        "@types/node": "^22.10.6"
+        "@types/node": "^22.10.7"
     }
 }

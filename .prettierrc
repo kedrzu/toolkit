@@ -5,5 +5,13 @@
     "arrowParens": "avoid",
     "trailingComma": "all",
     "endOfLine": "lf",
-    "singleAttributePerLine": true
+    "singleAttributePerLine": true,
+    "overrides": [
+        {
+            "files": ["*.yml", "*.yaml"],
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
 }

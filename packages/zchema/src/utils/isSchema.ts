@@ -8,7 +8,7 @@ export function isSchema(value: unknown, factory?: SchemaBase) {
             return true;
         }
 
-        return value.base === factory;
+        return value.type === factory;
     }
 
     return false;

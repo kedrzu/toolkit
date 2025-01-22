@@ -4,18 +4,12 @@ import chalk from 'chalk';
 import { compareVersions } from 'compare-versions';
 import consola from 'consola';
 import depcheckImport from 'depcheck';
-import zod from 'zod';
 
-export const options = zod.object({
-    fix: zod.boolean().default(false).describe('Fix dependencies'),
-});
+interface Options {
+    fix: boolean;
+}
 
-type Options = zod.infer<typeof options>;
-type Props = {
-    options: Options;
-};
-
-export default async function Depcheck({ options }: Props) {
+export default async function Depcheck(options: Options) {
     const cwd = process.cwd();
     const packages = await getPackages(cwd);
 
