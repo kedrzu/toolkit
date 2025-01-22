@@ -1,0 +1,26 @@
+name: Automerge release
+on:
+  push:
+    branches: [release]
+
+jobs:
+  merge-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Git
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "Github Actions"
+          git fetch --unshallow
+
+      - name: Merge release to main
+        id: mergeRelease
+        run: |
+          git checkout main
+          git pull
+          git merge --no-ff release -m "chore: auto-merge release -> main"
+          git push
