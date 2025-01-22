@@ -20,7 +20,5 @@ jobs:
       - name: Merge release to main
         id: mergeRelease
         run: |
-          git checkout main
-          git pull
-          git merge --no-ff release -m "chore: auto-merge release -> main"
+          git merge --no-ff origin/release -m "chore: auto-merge release -> main"
           git push
