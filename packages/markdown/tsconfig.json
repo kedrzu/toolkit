@@ -1,0 +1,10 @@
+{
+    "extends": "@nzyme/tsconfig/base.json",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "tsBuildInfoFile": "./.tsbuildinfo",
+        "rootDir": "./src",
+        "types": ["@types/node"]
+    },
+    "include": ["src"]
+}
