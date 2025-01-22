@@ -1,3 +1,19 @@
+## 0.5.0 (2025-01-22)
+
+### 🚀 Features
+
+- add markdown package ([11fa4ca](https://github.com/kedrzu/nzyme/commit/11fa4ca))
+- package updates and cleanup ([ba8ebb1](https://github.com/kedrzu/nzyme/commit/ba8ebb1))
+- **zchema:** add tuple schema and fromJsonSchema ([b8211cb](https://github.com/kedrzu/nzyme/commit/b8211cb))
+
+### 🩹 Fixes
+
+- **cli:** switched from pastel to oclif ([e8585ab](https://github.com/kedrzu/nzyme/commit/e8585ab))
+
+### ❤️ Thank You
+
+- Michał Kędrzyński
+
 ## 0.4.1 (2025-01-14)
 
 ### 🩹 Fixes

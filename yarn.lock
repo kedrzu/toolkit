@@ -2829,9 +2829,9 @@ __metadata:
   dependencies:
     "@lerna/package": "npm:^6.4.1"
     "@lerna/project": "npm:^6.4.1"
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/node-utils": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/node-utils": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
     "@oclif/core": "npm:^4.2.3"
     "@oclif/plugin-help": "npm:^6.2.21"
     "@oclif/plugin-version": "npm:^2.2.20"
@@ -2860,35 +2860,46 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nzyme/crypto-utils@npm:0.4.1, @nzyme/crypto-utils@workspace:packages/crypto-utils":
+"@nzyme/crypto-utils@npm:0.4.1":
+  version: 0.4.1
+  resolution: "@nzyme/crypto-utils@npm:0.4.1"
+  dependencies:
+    "@nzyme/types": "npm:^0.4.1"
+    "@nzyme/utils": "npm:^0.4.1"
+    spark-md5: "npm:^3.0.2"
+  checksum: 10c0/c68d71f426cdde9a893880a447bea19836aa9be3d56435a391c7e9c994fe72a03103c429f0edc256b63d32754636566694f3b1c57f0f9d64be19fce2068fcebd
+  languageName: node
+  linkType: hard
+
+"@nzyme/crypto-utils@workspace:packages/crypto-utils":
   version: 0.0.0-use.local
   resolution: "@nzyme/crypto-utils@workspace:packages/crypto-utils"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/types": "npm:^0.4.1"
-    "@nzyme/utils": "npm:^0.4.1"
-    "@nzyme/vitest": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/types": "npm:^0.5.0"
+    "@nzyme/utils": "npm:^0.5.0"
+    "@nzyme/vitest": "npm:^0.5.0"
     "@types/node": "npm:^22.10.7"
     "@types/spark-md5": "npm:^3.0.5"
     spark-md5: "npm:^3.0.2"
   languageName: unknown
   linkType: soft
 
-"@nzyme/dom-utils@npm:^0.4.1, @nzyme/dom-utils@workspace:packages/dom-utils":
+"@nzyme/dom-utils@npm:^0.5.0, @nzyme/dom-utils@workspace:packages/dom-utils":
   version: 0.0.0-use.local
   resolution: "@nzyme/dom-utils@workspace:packages/dom-utils"
   dependencies:
     "@nzyme/crypto-utils": "npm:0.4.1"
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/utils": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/utils": "npm:^0.5.0"
     "@types/lodash.debounce": "npm:^4.0.9"
     lodash.debounce: "npm:^4.0.8"
   languageName: unknown
   linkType: soft
 
-"@nzyme/eslint@npm:^0.4.1, @nzyme/eslint@workspace:packages/eslint":
+"@nzyme/eslint@npm:^0.5.0, @nzyme/eslint@workspace:packages/eslint":
   version: 0.0.0-use.local
   resolution: "@nzyme/eslint@workspace:packages/eslint"
   dependencies:
@@ -2904,12 +2915,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nzyme/esm@npm:^0.4.1, @nzyme/esm@workspace:packages/esm":
+"@nzyme/esm@npm:^0.5.0, @nzyme/esm@workspace:packages/esm":
   version: 0.0.0-use.local
   resolution: "@nzyme/esm@workspace:packages/esm"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
     "@types/node": "npm:^22.10.7"
   languageName: unknown
   linkType: soft
@@ -2918,11 +2929,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/fetch-utils@workspace:packages/fetch-utils"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/ioc": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/types": "npm:^0.4.1"
-    "@nzyme/xml-utils": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/ioc": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/types": "npm:^0.5.0"
+    "@nzyme/xml-utils": "npm:^0.5.0"
     "@types/node": "npm:^22.10.7"
     ufo: "npm:^1.5.4"
   languageName: unknown
@@ -2932,34 +2943,34 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/i18n@workspace:packages/i18n"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/ioc": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/types": "npm:^0.4.1"
-    "@nzyme/utils": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/ioc": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/types": "npm:^0.5.0"
+    "@nzyme/utils": "npm:^0.5.0"
   languageName: unknown
   linkType: soft
 
-"@nzyme/ioc@npm:^0.4.1, @nzyme/ioc@workspace:packages/ioc":
+"@nzyme/ioc@npm:^0.5.0, @nzyme/ioc@workspace:packages/ioc":
   version: 0.0.0-use.local
   resolution: "@nzyme/ioc@workspace:packages/ioc"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/types": "npm:^0.4.1"
-    "@nzyme/utils": "npm:^0.4.1"
-    "@nzyme/vitest": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/types": "npm:^0.5.0"
+    "@nzyme/utils": "npm:^0.5.0"
+    "@nzyme/vitest": "npm:^0.5.0"
     vitest: "npm:^3.0.1"
   languageName: unknown
   linkType: soft
 
-"@nzyme/logging@npm:^0.4.1, @nzyme/logging@workspace:packages/logging":
+"@nzyme/logging@npm:^0.5.0, @nzyme/logging@workspace:packages/logging":
   version: 0.0.0-use.local
   resolution: "@nzyme/logging@workspace:packages/logging"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/ioc": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/ioc": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
     "@types/node": "npm:^22.10.7"
     chalk: "npm:^5.4.1"
     consola: "npm:^3.4.0"
@@ -2970,11 +2981,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/markdown@workspace:packages/markdown"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/types": "npm:^0.4.1"
-    "@nzyme/utils": "npm:^0.4.1"
-    "@nzyme/vitest": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/types": "npm:^0.5.0"
+    "@nzyme/utils": "npm:^0.5.0"
+    "@nzyme/vitest": "npm:^0.5.0"
     "@types/node": "npm:^22.10.7"
   languageName: unknown
   linkType: soft
@@ -2983,23 +2994,23 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/money@workspace:packages/money"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/utils": "npm:^0.4.1"
-    "@nzyme/vitest": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/utils": "npm:^0.5.0"
+    "@nzyme/vitest": "npm:^0.5.0"
     "@types/node": "npm:^22.10.7"
   languageName: unknown
   linkType: soft
 
-"@nzyme/node-utils@npm:^0.4.1, @nzyme/node-utils@workspace:packages/node-utils":
+"@nzyme/node-utils@npm:^0.5.0, @nzyme/node-utils@workspace:packages/node-utils":
   version: 0.0.0-use.local
   resolution: "@nzyme/node-utils@workspace:packages/node-utils"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/types": "npm:^0.4.1"
-    "@nzyme/utils": "npm:^0.4.1"
-    "@nzyme/vitest": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/types": "npm:^0.5.0"
+    "@nzyme/utils": "npm:^0.5.0"
+    "@nzyme/vitest": "npm:^0.5.0"
     "@types/node": "npm:^22.10.7"
   languageName: unknown
   linkType: soft
@@ -3009,10 +3020,10 @@ __metadata:
   resolution: "@nzyme/project-utils@workspace:packages/project-utils"
   dependencies:
     "@lerna/project": "npm:^6.4.1"
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/types": "npm:^0.4.1"
-    "@nzyme/utils": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/types": "npm:^0.5.0"
+    "@nzyme/utils": "npm:^0.5.0"
     "@types/node": "npm:^22.10.7"
     chalk: "npm:^5.4.1"
     consola: "npm:^3.4.0"
@@ -3025,11 +3036,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/rollup-utils@workspace:packages/rollup-utils"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/esm": "npm:^0.4.1"
-    "@nzyme/logging": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/utils": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/esm": "npm:^0.5.0"
+    "@nzyme/logging": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/utils": "npm:^0.5.0"
     "@rollup/plugin-commonjs": "npm:^28.0.2"
     "@rollup/plugin-json": "npm:^6.1.0"
     "@rollup/plugin-node-resolve": "npm:^16.0.0"
@@ -3056,14 +3067,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/slack@workspace:packages/slack"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/utils": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/utils": "npm:^0.5.0"
     "@slack/web-api": "npm:7.8.0"
   languageName: unknown
   linkType: soft
 
-"@nzyme/tsconfig@npm:^0.4.1, @nzyme/tsconfig@workspace:packages/tsconfig":
+"@nzyme/tsconfig@npm:^0.5.0, @nzyme/tsconfig@workspace:packages/tsconfig":
   version: 0.0.0-use.local
   resolution: "@nzyme/tsconfig@workspace:packages/tsconfig"
   dependencies:
@@ -3074,7 +3085,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nzyme/types@npm:^0.4.1, @nzyme/types@workspace:packages/types":
+"@nzyme/types@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "@nzyme/types@npm:0.4.1"
+  dependencies:
+    tslib: "npm:^2.8.1"
+    type-fest: "npm:^4.32.0"
+  checksum: 10c0/d65fccec225febda20cc468029fcfd9037e9abcc29e2f6037a9477c1e5bbde7e18d5d0790ed5340bcc29cb37206b622fbee3b1dbc7adde36a2a29b21eb463b60
+  languageName: node
+  linkType: hard
+
+"@nzyme/types@npm:^0.5.0, @nzyme/types@workspace:packages/types":
   version: 0.0.0-use.local
   resolution: "@nzyme/types@workspace:packages/types"
   dependencies:
@@ -3087,20 +3108,31 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/typography@workspace:packages/typography"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/types": "npm:^0.4.1"
-    "@nzyme/utils": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/types": "npm:^0.5.0"
+    "@nzyme/utils": "npm:^0.5.0"
   languageName: unknown
   linkType: soft
 
-"@nzyme/utils@npm:^0.4.1, @nzyme/utils@workspace:packages/utils":
+"@nzyme/utils@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "@nzyme/utils@npm:0.4.1"
+  dependencies:
+    "@nzyme/types": "npm:^0.4.1"
+    "@types/lodash.isequal": "npm:^4.5.8"
+    lodash.isequal: "npm:^4.5.0"
+  checksum: 10c0/ffafd5e17dc6952807e48e5ae9ff696b5fe4792eaef256a3ef108ca0861c58daf31b506eb1dc29ba3d525e36426e5ec2391fe06a7d000d9f7006f61974e18edb
+  languageName: node
+  linkType: hard
+
+"@nzyme/utils@npm:^0.5.0, @nzyme/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@nzyme/utils@workspace:packages/utils"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/types": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/types": "npm:^0.5.0"
     "@types/lodash.isequal": "npm:^4.5.8"
     "@types/node": "npm:^22.10.7"
     lodash.isequal: "npm:^4.5.0"
@@ -3108,37 +3140,37 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nzyme/validation@npm:^0.4.1, @nzyme/validation@workspace:packages/validation":
+"@nzyme/validation@npm:^0.5.0, @nzyme/validation@workspace:packages/validation":
   version: 0.0.0-use.local
   resolution: "@nzyme/validation@workspace:packages/validation"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/types": "npm:^0.4.1"
-    "@nzyme/utils": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/types": "npm:^0.5.0"
+    "@nzyme/utils": "npm:^0.5.0"
   languageName: unknown
   linkType: soft
 
-"@nzyme/vitest@npm:^0.4.1, @nzyme/vitest@workspace:packages/vitest":
+"@nzyme/vitest@npm:^0.5.0, @nzyme/vitest@workspace:packages/vitest":
   version: 0.0.0-use.local
   resolution: "@nzyme/vitest@workspace:packages/vitest"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
     date-fns: "npm:^4.1.0"
     tslib: "npm:^2.8.1"
     vitest: "npm:^3.0.1"
   languageName: unknown
   linkType: soft
 
-"@nzyme/vue-ioc@npm:^0.4.1, @nzyme/vue-ioc@workspace:packages/vue-ioc":
+"@nzyme/vue-ioc@npm:^0.5.0, @nzyme/vue-ioc@workspace:packages/vue-ioc":
   version: 0.0.0-use.local
   resolution: "@nzyme/vue-ioc@workspace:packages/vue-ioc"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/ioc": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/types": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/ioc": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/types": "npm:^0.5.0"
     vue: "npm:^3.5.13"
   languageName: unknown
   linkType: soft
@@ -3147,42 +3179,42 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/vue-transitions@workspace:packages/vue-transitions"
   dependencies:
-    "@nzyme/dom-utils": "npm:^0.4.1"
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/types": "npm:^0.4.1"
-    "@nzyme/utils": "npm:^0.4.1"
-    "@nzyme/vue": "npm:^0.4.1"
-    "@nzyme/vue-utils": "npm:^0.4.1"
+    "@nzyme/dom-utils": "npm:^0.5.0"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/types": "npm:^0.5.0"
+    "@nzyme/utils": "npm:^0.5.0"
+    "@nzyme/vue": "npm:^0.5.0"
+    "@nzyme/vue-utils": "npm:^0.5.0"
     vue: "npm:^3.5.13"
   languageName: unknown
   linkType: soft
 
-"@nzyme/vue-utils@npm:^0.4.1, @nzyme/vue-utils@workspace:packages/vue-utils":
+"@nzyme/vue-utils@npm:^0.5.0, @nzyme/vue-utils@workspace:packages/vue-utils":
   version: 0.0.0-use.local
   resolution: "@nzyme/vue-utils@workspace:packages/vue-utils"
   dependencies:
-    "@nzyme/dom-utils": "npm:^0.4.1"
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/types": "npm:^0.4.1"
-    "@nzyme/utils": "npm:^0.4.1"
+    "@nzyme/dom-utils": "npm:^0.5.0"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/types": "npm:^0.5.0"
+    "@nzyme/utils": "npm:^0.5.0"
     vue: "npm:^3.5.13"
   languageName: unknown
   linkType: soft
 
-"@nzyme/vue@npm:^0.4.1, @nzyme/vue@workspace:packages/vue":
+"@nzyme/vue@npm:^0.5.0, @nzyme/vue@workspace:packages/vue":
   version: 0.0.0-use.local
   resolution: "@nzyme/vue@workspace:packages/vue"
   dependencies:
-    "@nzyme/dom-utils": "npm:^0.4.1"
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/ioc": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/types": "npm:^0.4.1"
-    "@nzyme/utils": "npm:^0.4.1"
-    "@nzyme/vue-ioc": "npm:^0.4.1"
-    "@nzyme/vue-utils": "npm:^0.4.1"
+    "@nzyme/dom-utils": "npm:^0.5.0"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/ioc": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/types": "npm:^0.5.0"
+    "@nzyme/utils": "npm:^0.5.0"
+    "@nzyme/vue-ioc": "npm:^0.5.0"
+    "@nzyme/vue-utils": "npm:^0.5.0"
     "@types/lodash.debounce": "npm:^4.0.9"
     lodash.debounce: "npm:^4.0.8"
     sass: "npm:1.83.4"
@@ -3190,12 +3222,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nzyme/xml-utils@npm:^0.4.1, @nzyme/xml-utils@workspace:packages/xml-utils":
+"@nzyme/xml-utils@npm:^0.5.0, @nzyme/xml-utils@workspace:packages/xml-utils":
   version: 0.0.0-use.local
   resolution: "@nzyme/xml-utils@workspace:packages/xml-utils"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
     fast-xml-parser: "npm:^4.5.1"
   languageName: unknown
   linkType: soft
@@ -3204,11 +3236,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nzyme/zchema@workspace:packages/zchema"
   dependencies:
-    "@nzyme/eslint": "npm:^0.4.1"
-    "@nzyme/tsconfig": "npm:^0.4.1"
-    "@nzyme/types": "npm:^0.4.1"
-    "@nzyme/utils": "npm:^0.4.1"
-    "@nzyme/validation": "npm:^0.4.1"
+    "@nzyme/eslint": "npm:^0.5.0"
+    "@nzyme/tsconfig": "npm:^0.5.0"
+    "@nzyme/types": "npm:^0.5.0"
+    "@nzyme/utils": "npm:^0.5.0"
+    "@nzyme/validation": "npm:^0.5.0"
     "@types/json-schema": "npm:^7.0.15"
     "@types/lodash.merge": "npm:^4.6.9"
     vitest: "npm:^3.0.1"
